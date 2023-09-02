@@ -1,3 +1,4 @@
+#!/usr/bin/node
 // Create an array of strings.
 const languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
 

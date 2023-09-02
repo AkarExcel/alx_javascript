@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 function addMeMaybe(number, theFunction) {
     if (typeof number === 'number' && typeof theFunction === 'function') {
       // Increment the number by 1.

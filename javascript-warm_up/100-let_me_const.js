@@ -1,3 +1,4 @@
+#!/usr/bin/node
 // Define the variable myVar and set its value to 333.
 let myVar = 333;
 
