@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/node | chmod a+x 101-call_me_moby.js
 
 
 function executeXTimes(x, theFunction) {

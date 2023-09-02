@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/node | chmod a+x 103-object_fct.js
 
 const myObject = {
     type: 'object',

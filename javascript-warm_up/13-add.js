@@ -1,4 +1,5 @@
-#!/usr/bin/node
+#!/usr/bin/node | chmod a+x 13-add.js
+
 
 
 // Declare a function named "add" that takes two integer parameters.

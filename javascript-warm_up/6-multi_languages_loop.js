@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/node | chmod a+x 6-multi_languages_loop.js
 
 
 // Create an array of strings.

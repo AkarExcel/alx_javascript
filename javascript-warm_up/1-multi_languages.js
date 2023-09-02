@@ -1,4 +1,6 @@
-#!/usr/bin/node
+#!/usr/bin/node | chmod a+x 1-multi_languages.js
+
+
 // Use console.log() to print the first line.
 console.log("C is fun");
 

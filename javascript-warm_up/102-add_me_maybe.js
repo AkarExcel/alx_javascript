@@ -1,6 +1,4 @@
-#!/usr/bin/node
-
-
+#!/usr/bin/node | chmod a+x 102-add_me_maybe.js
 function addMeMaybe(number, theFunction) {
     if (typeof number === 'number' && typeof theFunction === 'function') {
       // Increment the number by 1.
