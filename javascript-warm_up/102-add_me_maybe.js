@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+
 function addMeMaybe(number, theFunction) {
     if (typeof number === 'number' && typeof theFunction === 'function') {
       // Increment the number by 1.
@@ -11,5 +12,3 @@ function addMeMaybe(number, theFunction) {
       console.error('Invalid arguments. Please provide a number and a function.');
     }
   }
-
-  
