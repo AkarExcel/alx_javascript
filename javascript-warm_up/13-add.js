@@ -10,8 +10,5 @@ function add(a, b) {
 
 module.exports = {add}
   
-  // Now, you can use the "add" function to add two integers.
-  const result = add(5, 3);
-  console.log(result); // Outputs: 8
 
 
