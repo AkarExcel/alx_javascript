@@ -1,5 +1,7 @@
 #!/usr/bin/node | chmod a+x 102-add_me_maybe.js
-function addMeMaybe(number, theFunction) {
+
+
+export default function addMeMaybe(number, theFunction) {
     if (typeof number === 'number' && typeof theFunction === 'function') {
       // Increment the number by 1.
       number++;
@@ -10,5 +12,3 @@ function addMeMaybe(number, theFunction) {
       console.error('Invalid arguments. Please provide a number and a function.');
     }
   }
-
-  module.exports = addMeMaybe;
