@@ -1,7 +1,7 @@
 #!/usr/bin/node | chmod a+x 101-call_me_moby.js
 
 
-function executeXTimes(x, theFunction) {
+function callMeMoby(x, theFunction) {
     if (typeof x === 'number' && typeof theFunction === 'function') {
       for (let i = 0; i < x; i++) {
         theFunction();
@@ -12,4 +12,4 @@ function executeXTimes(x, theFunction) {
   }
   
 
-module.exports = executeXTimes;
+module.exports = callMeMoby;

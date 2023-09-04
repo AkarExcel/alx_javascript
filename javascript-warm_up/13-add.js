@@ -11,3 +11,5 @@ function add(a, b) {
   // Now, you can use the "add" function to add two integers.
   const result = add(5, 3);
   console.log(result); // Outputs: 8
+
+module.exports = add

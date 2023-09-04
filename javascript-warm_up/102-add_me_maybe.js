@@ -10,3 +10,5 @@ function addMeMaybe(number, theFunction) {
       console.error('Invalid arguments. Please provide a number and a function.');
     }
   }
+
+  module.exports = addMeMaybe;
