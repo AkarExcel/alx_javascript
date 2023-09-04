@@ -3,10 +3,12 @@
 
 
 // Declare a function named "add" that takes two integer parameters.
-export default function add(a, b) {
+function add(a, b) {
     // Add the two integers and return the result.
     return a + b;
   }
+
+module.exports = {add}
   
   // Now, you can use the "add" function to add two integers.
   const result = add(5, 3);

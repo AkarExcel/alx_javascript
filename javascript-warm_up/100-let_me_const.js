@@ -3,7 +3,7 @@
 
 
 // Define the variable myVar and set its value to 333.
-export let myVar = 333; // 
+let myVar = 333; // 
 
-
+exports.myVar = myVar
 
