@@ -24,9 +24,16 @@ request(url, (error, response, body) => {
       }
     });
 
-    // Print the count of completed tasks for each user.
-    for (const userId in taskCountsByUser) {
-      console.log(`'${userId}' : ${taskCountsByUser[userId]},`);
-    }
+
+        // Create an empty object.
+        const myObject = {};
+
+        // Use a for loop to populate the object.
+        for (const userId in taskCountsByUser) {
+          myObject[userId] = taskCountsByUser[userId];
+        }
+    
+        // Now, myObject contains { 'key1': 'value1', 'key2': 'value2', 'key3': 'value3' }.
+        console.log(myObject);
   }
 });
