@@ -1,25 +1,19 @@
-const req = require('request');
+const request = require('request');
 
-const apiUrl = `${process.argv[2]}`;
+const url = process.argv[2];
 
-const characterId = 18; // Character ID for Wedge Antilles
-
-// Make an HTTP GET request to fetch movie data.
-req(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error('Error:', error);
-  } else if (response.statusCode !== 200) {
-    console.error('Request failed with status code:', response.statusCode);
-  } else {
-    // Parse the JSON response.
-    const movieData = JSON.parse(body);
-
-    // Filter movies where Wedge Antilles appears.
-    const moviesWithWedgeAntilles = movieData.results.filter((movie) => {
-      return movie.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`);
-    });
-
-    // Print the number of movies where Wedge Antilles is present.
-    console.log(`${moviesWithWedgeAntilles.length}`);
-  }
+request.get(url, (error, response, body) =>{
+    if(!error && response.statusCode == 200){
+        const films = JSON.parse(body);
+        let counter = 0;
+        films.results.forEach((film) =>{
+            film.characters.forEach((actor) => {
+                const split_film = actor.split('/');
+                if(split_film[split_film.length-2] == 18) {
+                    counter += 1;
+                }
+            })
+        })
+        console.log(counter);
+    }
 });
